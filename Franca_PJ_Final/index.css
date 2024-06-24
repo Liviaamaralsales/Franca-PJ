@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #18070d;
+}
+
+.container
+{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid #d3ad7f;
+    box-shadow: 0 0 25px #d3ad7f;
+}
+
+.container .form-box
+{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-box .Login
+{
+    left: 0;
+    padding: 0 40px;
+}
+
+.form-box h2
+{
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-right: 23px;
+}
+
+.input-box label
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label
+{
+    top: -5px;
+    color: #d3ad7f;
+}
+
+.input-box input:focus,
+.input-box input:valid
+{
+    border-bottom: 2px solid #d3ad7f;
+}
+
+.input-box input:focus ~ i,
+.input-box input:valid ~ i
+{
+    color: #d3ad7f;
+}
+
+.input-box i
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 18px;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.btn
+{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+}
